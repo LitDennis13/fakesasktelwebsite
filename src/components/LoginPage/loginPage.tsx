@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import styles from "./loginPage.module.css";
 
 import { Link } from "react-router-dom"
 
 function LoginPage() {
+    useEffect(() => {
+            document.title = "mySaskTel Log In | SaskTel";
+        }, []);
+
+
     return (
         <div className={styles.loginPage}>
             <header className={styles.topBar}>

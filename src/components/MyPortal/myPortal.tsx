@@ -1,8 +1,14 @@
 
 import { Link } from "react-router-dom";
 import styles from "./myPortal.module.css";
+import { useEffect } from "react";
 
 function MyPortal() {
+
+    useEffect(() => {
+            document.title = "Home | MyPortal | SaskTel";
+        }, []);
+
     return (
         <div className={styles.portalPage}>
             <div className={styles.brandBar}>
