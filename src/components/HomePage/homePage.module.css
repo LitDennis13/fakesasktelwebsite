@@ -197,7 +197,6 @@
 
 .savingsCard {
     background-color: #ffffff;
-    border-radius: 8px;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     display: flex;

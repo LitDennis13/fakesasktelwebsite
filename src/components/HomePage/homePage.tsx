@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 import styles from "./homePage.module.css"
 
+import img1 from "../../img/2026-smartreturn-720x540.jpg"
+import img2 from "../../img/2026-01-crave-720x540.jpg"
+import img3 from "../../img/2026-01-internet-promo-720x540.jpg"
+
+
 function HomePage() {
 
 
@@ -58,7 +63,7 @@ function HomePage() {
             <h2>More Savings</h2>
             <div className={styles.savingsGrid}>
                 <article className={styles.savingsCard}>
-                    <img src="https://www.sasktel.com/images/phones/phones/phones-grp.jpg" alt="Smartphones" />
+                    <img src={img1} alt="Smartphones" />
                     <div className={styles.cardContent}>
                         <p className={styles.cardEyebrow}>Wireless</p>
                         <h3>SmartReturn</h3>
@@ -70,7 +75,7 @@ function HomePage() {
                     </div>
                 </article>
                 <article className={styles.savingsCard}>
-                    <img src="https://www.sasktel.com/images/tv/crave/crave-hero-1440x880.jpg" alt="Crave shows" />
+                    <img src={img2} alt="Crave shows" />
                     <div className={styles.cardContent}>
                         <p className={styles.cardEyebrow}>TV</p>
                         <h3>Crave</h3>
@@ -82,7 +87,7 @@ function HomePage() {
                     </div>
                 </article>
                 <article className={styles.savingsCard}>
-                    <img src="https://www.sasktel.com/images/internet/internet-hero-1440x880.jpg" alt="Person with dog" />
+                    <img src={img3} alt="Person with dog" />
                     <div className={styles.cardContent}>
                         <p className={styles.cardEyebrow}>Internet</p>
                         <h3>This connection? Effortless.</h3>
