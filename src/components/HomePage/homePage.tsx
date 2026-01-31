@@ -52,9 +52,52 @@ function HomePage() {
                 TOP UP PREPAID
             </button>
       </div>
-      <div className={styles.theEnd}>
-            <p>More Savings</p>
-      </div>
+      <section className={styles.moreSavingsSection}>
+            <h2>More Savings</h2>
+            <div className={styles.savingsGrid}>
+                <article className={styles.savingsCard}>
+                    <img src="https://www.sasktel.com/images/phones/phones/phones-grp.jpg" alt="Smartphones" />
+                    <div className={styles.cardContent}>
+                        <p className={styles.cardEyebrow}>Wireless</p>
+                        <h3>SmartReturn</h3>
+                        <div className={styles.cardHighlight}>Best prices</div>
+                        <p>With SmartReturn, get premium devices for the lowest prices.</p>
+                        <p className={styles.cardConditions}>Conditions apply. <span>See details.</span></p>
+                        <button className={styles.cardButton}>LEARN MORE</button>
+                        <a className={styles.cardLink} href="/">See more Wireless deals</a>
+                    </div>
+                </article>
+                <article className={styles.savingsCard}>
+                    <img src="https://www.sasktel.com/images/tv/crave/crave-hero-1440x880.jpg" alt="Crave shows" />
+                    <div className={styles.cardContent}>
+                        <p className={styles.cardEyebrow}>TV</p>
+                        <h3>Crave</h3>
+                        <div className={styles.cardHighlight}>50% off</div>
+                        <p>New Crave subscribers can get Crave at 50% off for the first 4 months!</p>
+                        <p className={styles.cardConditions}>Conditions apply. <span>See details.</span></p>
+                        <button className={styles.cardButton}>ORDER NOW</button>
+                        <a className={styles.cardLink} href="/">See more TV deals</a>
+                    </div>
+                </article>
+                <article className={styles.savingsCard}>
+                    <img src="https://www.sasktel.com/images/internet/internet-hero-1440x880.jpg" alt="Person with dog" />
+                    <div className={styles.cardContent}>
+                        <p className={styles.cardEyebrow}>Internet</p>
+                        <h3>This connection? Effortless.</h3>
+                        <div className={styles.cardPriceLine}>
+                            <span className={styles.cardPriceLabel}>infiNET 300</span>
+                            <span className={styles.cardPrice}>
+                                $65<span className={styles.cardPriceSuffix}>00/mo.</span>
+                            </span>
+                        </div>
+                        <p>For 24 months with a 2-year Internet contract when bundled with wireless.</p>
+                        <p className={styles.cardConditions}>Conditions apply. <span>See details.</span></p>
+                        <button className={styles.cardButton}>VIEW OFFER</button>
+                        <a className={styles.cardLink} href="/">See more Internet deals</a>
+                    </div>
+                </article>
+            </div>
+      </section>
 
     </div>
 
