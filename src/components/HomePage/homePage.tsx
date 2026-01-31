@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import styles from "./homePage.module.css"
 
 import img1 from "../../img/2026-smartreturn-720x540.jpg"
@@ -23,7 +22,6 @@ function HomePage() {
                 <button>Deals</button>
                 <button>Bundles</button>
                 <button>About Us</button>
-                <Link className={styles.loginButton} to="/LoginPage">Log in</Link>
             </div>
         </div>
         <div className={styles.mainContent}>
