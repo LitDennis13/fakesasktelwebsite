@@ -49,9 +49,11 @@ function LoginPage() {
                             <input type="checkbox" />
                             <span>Remember me</span>
                         </label>
+                        <Link to={"/MyPortal"}>
                         <button className={styles.primaryButton} type="button">
                             LOG IN
                         </button>
+                        </Link>
                         <p className={styles.forgotLine}>
                             Forgot your <span>username</span> or <span>password</span>?
                         </p>
@@ -75,11 +77,9 @@ function LoginPage() {
             </main>
             <footer className={styles.footer}>
                 <div className={styles.footerContent}>
-                    <img
-                        src="https://www.sasktel.com/assets/img/Header/LogoDark.svg"
-                        alt="SaskTel"
-                    />
-                    <span>© 2026 SaskTel and its licensors. All rights reserved.</span>
+                    <Link to={"/"}>
+                        <img src="https://www.sasktel.com/assets/img/Header/LogoDark.svg" alt="" />
+                    </Link>
                 </div>
             </footer>
         </div>

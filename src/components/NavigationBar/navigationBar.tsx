@@ -1,8 +1,20 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import styles from "./navigationBar.module.css"
+import { useEffect, useState } from "react";
 
 function NavigationBar() {
-
+    const [loggedIn, setLoggedIn] = useState(false);
+    const location = useLocation();
+    console.log(location);
+    useEffect(() => {
+        if (location.pathname == "/MyPortal") {
+            setLoggedIn(true);
+        }
+        else {
+            setLoggedIn(false);
+        }
+        console.log("changes");
+    }, [location]);
 
 
     return <div className={styles.navigationBarMain}>
@@ -37,7 +49,7 @@ function NavigationBar() {
             <Link to={"/LoginPage"}>
                 <button>
                     <img src="https://www.sasktel.com/assets/img/my-sasktel.svg" alt="" />
-                    LOG IN
+                    LOG {loggedIn ? "OUT" : "IN"}
                 </button>
             </Link>
             

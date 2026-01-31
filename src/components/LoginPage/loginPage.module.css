@@ -134,7 +134,10 @@
     letter-spacing: 2px;
     transition: background-color .7s;
 }
-
+a, .primaryButton {
+    height: 100%;
+    text-decoration: none;
+}
 .primaryButton:hover,
 .secondaryButton:hover {
     background-color: rgb(17,17,17);

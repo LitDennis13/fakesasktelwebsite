@@ -264,6 +264,12 @@
     font-weight: 700;
     font-size: 13px;
     letter-spacing: 0.05em;
+    transition: background-color .7s;
+}
+
+.payButton:hover {
+    background-color: rgb(17,17,17);
+    transition: background-color .7s;
 }
 
 .autoPayments {

@@ -1,42 +1,15 @@
 
+import { Link } from "react-router-dom";
 import styles from "./myPortal.module.css";
 
 function MyPortal() {
     return (
         <div className={styles.portalPage}>
-            <header className={styles.utilityBar}>
-                <div className={styles.utilityLinks}>
-                    <span>Personal</span>
-                    <span>Business</span>
-                </div>
-                <div className={styles.searchBar}>
-                    <span className={styles.searchText}>What are you looking for?</span>
-                    <span className={styles.searchIcon} aria-hidden="true" />
-                </div>
-                <div className={styles.utilityActions}>
-                    <div className={styles.utilityItem}>
-                        <span className={styles.utilityIcon}>?</span>
-                        <span>Support</span>
-                    </div>
-                    <div className={styles.utilityItem}>
-                        <span className={styles.utilityIcon}>✉</span>
-                        <span>Sasktel.net</span>
-                    </div>
-                    <div className={styles.utilityItem}>
-                        <span className={styles.utilityIcon}>🛒</span>
-                        <span>Cart</span>
-                    </div>
-                    <div className={styles.utilityItem}>
-                        <span className={styles.utilityIcon}>◎</span>
-                        <span>mySASKTEL</span>
-                    </div>
-                    <div className={styles.utilityItem}>Log Out</div>
-                </div>
-            </header>
-
             <div className={styles.brandBar}>
                 <div className={styles.logo}>
-                    SaskTel <span className={styles.logoMark} />
+                    <Link to={"/"}>
+                        <img src="https://www.sasktel.com/assets/img/Header/LogoDark.svg" alt="" />
+                    </Link>
                 </div>
             </div>
 
