@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styles from "./homePage.module.css"
 
 function HomePage() {
@@ -17,6 +18,7 @@ function HomePage() {
                 <button>Deals</button>
                 <button>Bundles</button>
                 <button>About Us</button>
+                <Link className={styles.loginButton} to="/LoginPage">Log in</Link>
             </div>
         </div>
         <div className={styles.mainContent}>
