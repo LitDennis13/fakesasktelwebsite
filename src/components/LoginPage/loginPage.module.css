@@ -1,0 +1,238 @@
+.loginPage {
+    min-height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    color: #2a2a2a;
+}
+
+.header {
+    height: 64px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.logoText {
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+.logoMark {
+    width: 22px;
+    height: 14px;
+    background: linear-gradient(180deg, #2e77d0 0%, #2e77d0 100%);
+    mask: repeating-linear-gradient(
+        to bottom,
+        #000 0 2px,
+        transparent 2px 4px
+    );
+    -webkit-mask: repeating-linear-gradient(
+        to bottom,
+        #000 0 2px,
+        transparent 2px 4px
+    );
+    border-radius: 2px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px 64px;
+}
+
+.brand {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: #4d4d4d;
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.brandMy {
+    text-transform: lowercase;
+}
+
+.brandSasktel {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.panel {
+    width: min(900px, 100%);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 32px;
+    padding: 0 24px;
+}
+
+.loginColumn,
+.registerColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.loginColumn h2,
+.registerColumn h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #2b2b2b;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #5b5b5b;
+}
+
+.field input {
+    border: 1px solid #c9c9c9;
+    height: 38px;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+.passwordField {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.passwordField input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.eyeIcon {
+    position: absolute;
+    right: 12px;
+    display: inline-flex;
+}
+
+.rememberMe {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.rememberMe input {
+    width: 16px;
+    height: 16px;
+}
+
+.primaryButton {
+    margin-top: 8px;
+    background-color: #d1008f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    width: fit-content;
+}
+
+.forgot {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.forgot span {
+    color: #d1008f;
+    font-weight: 600;
+}
+
+.divider {
+    width: 1px;
+    background-color: #e0e0e0;
+}
+
+.benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #4b4b4b;
+}
+
+.benefits li {
+    position: relative;
+    padding-left: 22px;
+    line-height: 1.4;
+}
+
+.benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #f58a1f;
+    font-weight: 700;
+}
+
+.learnMore {
+    color: #d1008f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    padding: 20px 24px;
+}
+
+.footerContent {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.footerLogo {
+    font-weight: 700;
+}
+
+.footerText {
+    color: #c7c7c7;
+}
+
+@media (max-width: 900px) {
+    .panel {
+        grid-template-columns: 1fr;
+    }
+
+    .divider {
+        display: none;
+    }
+}
