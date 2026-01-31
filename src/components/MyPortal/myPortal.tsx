@@ -67,7 +67,7 @@ function MyPortal() {
                             <p className={styles.kicker}>YOUR BALANCE</p>
                             <div className={styles.balanceRow}>
                                 <span className={styles.balanceCurrency}>$</span>
-                                <span className={styles.balanceAmount}>0.00</span>
+                                <span className={styles.balanceAmount}>197.43</span>
                             </div>
                         </div>
                         <div className={styles.paymentBlock}>
