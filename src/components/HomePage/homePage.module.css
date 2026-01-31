@@ -34,6 +34,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 5px;
+    flex-wrap: wrap;
 }
 
 .sectionTwo > button {
@@ -43,6 +44,19 @@
     font-size: 14px;
     white-space: nowrap;
     color: rgb(17,17,17);
+}
+
+.loginButton {
+    border: 1px solid #d4148e;
+    color: #d4148e;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
 }
 
 .mainContent {
@@ -292,4 +306,3 @@
 .cardLink:hover {
     text-decoration: underline;
 }
-
