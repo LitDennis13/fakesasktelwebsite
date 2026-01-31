@@ -72,7 +72,7 @@ function MyPortal() {
             </section>
 
             <main className={styles.portalMain}>
-                <h1 className={styles.welcomeHeading}>Welcome to mySASKTEL, Username</h1>
+                <h1 className={styles.welcomeHeading}>Welcome to mySASKTEL, Hamza</h1>
 
                 <section className={styles.accountCard}>
                     <div className={styles.accountHeader}>
@@ -82,7 +82,7 @@ function MyPortal() {
                                 Home Services <span className={styles.arrow}>›</span>
                             </h2>
                             <p className={styles.kicker}>ACCOUNT NUMBER</p>
-                            <p className={styles.accountNumber}>123456789</p>
+                            <p className={styles.accountNumber}>67676767</p>
                         </div>
                         <div className={styles.balanceBlock}>
                             <p className={styles.kicker}>YOUR BALANCE</p>
