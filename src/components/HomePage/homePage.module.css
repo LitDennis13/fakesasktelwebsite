@@ -26,6 +26,7 @@
 
 .homeNavigationBar > img {
     height: 24px;
+    cursor: pointer;
 }
 
 .sectionTwo {

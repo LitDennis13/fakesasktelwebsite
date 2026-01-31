@@ -1,14 +1,18 @@
 import styles from "./loginPage.module.css";
 
+import { Link } from "react-router-dom"
+
 function LoginPage() {
     return (
         <div className={styles.loginPage}>
             <header className={styles.topBar}>
+                <Link to={"/"}>
                 <img
                     src="https://www.sasktel.com/assets/img/Header/LogoDark.svg"
                     alt="SaskTel"
                     className={styles.logo}
                 />
+                </Link>
             </header>
             <main className={styles.mainContent}>
                 <div className={styles.brand}>

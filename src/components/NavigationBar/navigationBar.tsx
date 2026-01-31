@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 import styles from "./navigationBar.module.css"
 
 function NavigationBar() {
@@ -34,10 +34,13 @@ function NavigationBar() {
                 <img src="https://www.sasktel.com/assets/img/Header/Cart.svg" alt="" />
                 CART
             </button>
-            <button>
-                <img src="https://www.sasktel.com/assets/img/my-sasktel.svg" alt="" />
-                LOG IN
-            </button>
+            <Link to={"/LoginPage"}>
+                <button>
+                    <img src="https://www.sasktel.com/assets/img/my-sasktel.svg" alt="" />
+                    LOG IN
+                </button>
+            </Link>
+            
         </div>
     </div>
 }

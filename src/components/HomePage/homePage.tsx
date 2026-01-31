@@ -1,12 +1,12 @@
 import styles from "./homePage.module.css"
 
+
 import img1 from "../../img/2026-smartreturn-720x540.jpg"
 import img2 from "../../img/2026-01-crave-720x540.jpg"
 import img3 from "../../img/2026-01-internet-promo-720x540.jpg"
 
 
 function HomePage() {
-
 
     return <div className={styles.homePageMain}>
         <div className={styles.homeNavigationBar}>

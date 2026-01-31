@@ -17,5 +17,10 @@
     grid-area: 2 / 1 / 3 / 2;
     height: 100%;
     width: 100%;
+}
 
+.mainContent2 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+    width: 100%;
 }

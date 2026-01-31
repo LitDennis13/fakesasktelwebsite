@@ -79,7 +79,7 @@
 }
 
 
-.sectionThree > button {
+.sectionThree > button, a > button {
     width: 99px;
     border: none;
     background-color: inherit;
@@ -94,20 +94,25 @@
     padding-top: 12px;
     padding-bottom: 14px;
     font-size: 11px;
+    
 }
 
 
-.sectionThree > button > img {
+.sectionThree > button > img, a > button {
     width: 20px;
     height: 20px;
+    text-decoration: none;
 }
 
-.sectionThree > button:last-child {
+.sectionThree > a > button:last-child {
     width: 129px;
+    text-decoration: none;
+
 }
 
-.sectionThree > button:last-child > img {
+.sectionThree > a > button:last-child > img {
     width: 129px;
     scale: .85;
     filter: invert(72%) sepia(1%) saturate(0%) hue-rotate(159deg) brightness(93%) contrast(95%);
 }
+
